@@ -1,0 +1,82 @@
+@import '../variables';
+@import '../global';
+
+body {
+  padding: 12px;
+  margin: 0;
+  background-color: $grey;
+}
+
+.page-title {
+}
+
+#wrapper {
+  font-family: $font_roboto;
+  color: $grey_dark3;
+  width: 100%;
+
+  .container {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    .container-form {
+
+    }
+
+    .container-results {
+
+    }
+  }
+}
+
+#newThingInput {
+  width: 100%;
+  height: 60px;
+  padding: 12px;
+  font-size: 30px;
+  outline: none;
+}
+
+.btn {
+  border: 0;
+  font-size: 24px;
+  padding: 6px 32px;
+  transition: all ease-in-out 0.3s;
+  margin-top: 12px;
+  text-transform: uppercase;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $grey_dark3;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+  }
+}
+
+#newThingButton {
+  background-color: $blue;
+  color: $white;
+}
+
+#clearButton {
+  background-color: $black;
+  color: $white;
+  margin-left: 12px;
+}
+
+#pickThing {
+  background-color: $green;
+  color: $white;
+  margin-top: 32px;
+}
+
+#result {
+  background-color: $white;
+  color: $black;
+  margin-top: 32px;
+  padding: 16px;
+  border: 2px #4CAF50 solid;
+}

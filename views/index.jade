@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  #wrapper
+    .container
+      .container-form
+        h1.page-title Random Thing Picker
+        form(v-on:submit.prevent)
+          input#newThingInput(v-model="newThing", placeholder="Add things here")
+          button#newThingButton.btn(v-on:click="addThing", :disabled="newThing == ''", type="submit") Add
+          button#clearButton.btn(v-on:click="clearThings", v-if="things.length > 0") Clear
+      .container-results
+        #result(v-if="pickedThing != ''") {{ pickedThing }}
+        #thingsList(v-if="things.length > 0")
+          button#pickThing.btn(v-on:click="pickThing", v-if="things.length > 1", :disabled="things.length < 2") Pick!
+          h2.page-title Your options
+          ul
+            li(v-for="thing in things") {{ thing }}
+
+  script(type='text/javascript', src='/javascripts/app.js')

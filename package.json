@@ -1,0 +1,20 @@
+{
+  "name": "picker",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.15.2",
+    "comb": "^1.0.1",
+    "cookie-parser": "~1.4.3",
+    "express": "~4.14.0",
+    "helmet": "^3.3.0",
+    "jade": "~1.11.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0"
+  }
+}
